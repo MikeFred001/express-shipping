@@ -22,6 +22,7 @@ router.post("/", async function (req, res, next) {
   if (req.body === undefined) {
     throw new BadRequestError();
   }
+  // TODO: Pass in error message
 
   console.log("SHIPMENT ROUTE BODY", req.body);
 
